@@ -9,7 +9,7 @@ contract SampleToken is ERC20Detailed, ERC20 {
     // string public name = "UdacitySampleToken";
     // string public symbol = "UST";
     // uint public decimals = 18;
-    // uint public INITIAL_SUPPLY = 10000 * ( 10 ** decimals );
+    uint public INITIAL_SUPPLY = 1000 * ( 10 ^ 18 );
 
     constructor(string memory _name, string memory _symbol, uint8 _decimals, uint _initialSupply) 
     ERC20Detailed(_name, _symbol, _decimals) public {
